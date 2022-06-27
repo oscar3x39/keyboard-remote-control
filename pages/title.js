@@ -4,7 +4,7 @@ export default function title() {
         <>
             <div className="flex column">
                 <h1 className="title">MEDIA CONTROLS</h1>
-                <div className="status">PLAYING</div>
+                <div className="status">READY</div>
             </div>
         </>
     );
