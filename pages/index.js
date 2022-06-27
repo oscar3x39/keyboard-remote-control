@@ -1,11 +1,24 @@
-import React from 'react';
-import Keyboard from './keyboard'
-import QRcode from './qrcode'
+import React from "react"
+import {useRouter} from 'next/router'
 
-export default function Home({url}) {
+import Title from './title'
+import Sound from './sounds'
+import Channels from './channels'
+import Search from './search'
+import Keyboard from './keyboard'
+// import QRcode from './qrcode'
+
+export default function Home() {
+
+  const router = useRouter()
+
   return (
     <>
-      <QRcode url={ window.location.href }></QRcode>
+      <Title></Title>
+      <Search></Search>
+      <Channels></Channels>
+      <Sound></Sound>
+      {/* <QRcode url="{ router.pathname }"></QRcode> */}
       <Keyboard></Keyboard>
     </>
   )

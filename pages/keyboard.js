@@ -2,24 +2,12 @@ export default function keyboard() {
 
     return (
         <div className="keyboard flex column">
-            <div className="flex">
-                <button>Youtube</button>
-                <button>Netflix</button>
-            </div>
-            <div className="flex">
-                <button>Chrome</button>
-            </div>
-            <div className="flex">
-                <button>SPACE</button>
-            </div>
-            <div className="flex">
-                <button>↑</button>
-            </div>
-            <div className="flex">
-                <button>←</button>
-                <button>↓</button>
-                <button>→</button>
-            </div>
+            <div className="circle-out"></div>
+            <div className="circle-in"></div> 
+            <div className="direction top">↑</div>
+            <div className="direction left">←</div>
+            <div className="direction down">↓</div>
+            <div className="direction right">→</div>
         </div>
     );
 }
