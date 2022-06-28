@@ -1,6 +1,6 @@
 import { api } from '../utils'
 
-export default function channels() {
+export default function Channels() {
     return (
         <>
             <div className="channels">

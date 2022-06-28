@@ -1,8 +1,10 @@
-export default function sounds() {
+import { api } from '../utils'
+
+export default function Browser() {
 
     return (
         <>
-            <div className="sounds">
+            <div className="browser">
                 <div>
                     <img
                       className="icon"

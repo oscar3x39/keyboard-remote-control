@@ -5,7 +5,7 @@ import Title from '../components/title'
 import QRcode from '../components/qrcode'
 import Navigator from "../components/navigation"
 
-export default function qr({url}) {
+export default function Qr({url}) {
 
   const [data, setData] = useState(null)
   React.useEffect(() => {

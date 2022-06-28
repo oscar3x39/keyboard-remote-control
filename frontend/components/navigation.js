@@ -1,7 +1,7 @@
 
 import Link from 'next/link'
 
-export default function navigator() {
+export default function Navigator() {
 
   return (
     <>

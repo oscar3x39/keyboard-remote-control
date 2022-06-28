@@ -1,4 +1,5 @@
-const url = 'http://localhost:3333';
+const url = process.env.API_URL;
+
 const opts = {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },

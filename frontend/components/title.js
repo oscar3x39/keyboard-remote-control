@@ -1,4 +1,4 @@
-export default function title({title}) {
+export default function Title({title}) {
 
     return (
         <>
