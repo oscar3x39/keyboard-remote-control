@@ -1,12 +1,19 @@
 # Keyboard Remote Control
 
-> How to use
+> using Nextjs + Robotjs created a phone remote controller.
+
+### Install
+
+```
+cd frontend/ && npm install
+cd backend/ && npm install
+```
+
+### How to use
 ```
 npm run build // just once
 npm run start
 ```
-
-> using Nextjs + Robotjs created a phone remote controller.
 
 - Support arrow keys
 - Support switch browser tabs
