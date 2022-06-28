@@ -2,17 +2,17 @@
 
 > using Nextjs + Robotjs created a phone remote controller.
 
-### Install
+### Install (just once)
 
 ```
 cd frontend/ && npm install
 cd backend/ && npm install
+npm run build
 ```
 
 ### How to use
 ```
-npm run build // just once
-npm run start
+npm run start // listening on 0.0.0.0:3000
 ```
 
 - Support arrow keys

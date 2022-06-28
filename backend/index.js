@@ -5,6 +5,12 @@ const cors = require('cors');
 const path = require('path')
 const os = require('os');
 
+let port = 3333
+if (process.env.NODE_ENV == "prod") {
+  port = 3000
+}
+
+const app = express()
 const networkInterfaces = os.networkInterfaces();
 
 function getIp() {
@@ -18,9 +24,6 @@ function getIp() {
   }
   return "0.0.0.0"
 }
-
-const app = express()
-const port = 3000
 
 app.use(express.json())
 app.use(cors())
