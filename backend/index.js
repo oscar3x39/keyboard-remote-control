@@ -33,7 +33,7 @@ app.use('/', express.static(path.join(__dirname, '../frontend/out')))
 app.post('/api', (req, res) => {
 
   if (lock) {
-    res.send({success: falase})
+    res.send({success: false})
     return
   }
 
@@ -41,8 +41,10 @@ app.post('/api', (req, res) => {
 
   switch (req.body.func) {
     case "openUrl":
-      robot.keyTap("l",["ctrl"])
+      robot.keyTap("l",["control"])
       robot.typeString(req.body.url)
+      robot.keyTap('enter')
+      console.log(req.body.url)
       break
 
     case "keyboard":
