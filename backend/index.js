@@ -2,6 +2,7 @@ const express = require('express')
 const robot = require('robotjs')
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const path = require('path')
 
 const app = express()
 const port = 3333
@@ -12,7 +13,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 let lock = false;
 
-app.post('/', (req, res) => {
+app.use('/', express.static(path.join(__dirname, '../frontend/out')))
+
+app.post('/api', (req, res) => {
 
   if (lock) {
     res.send({success: falase})
