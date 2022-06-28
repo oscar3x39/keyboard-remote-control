@@ -3,7 +3,7 @@ import { api } from '../utils'
 export default function keyboard() {
 
     return (
-        <div className="keyboard flex column">
+        <div className="keyboard flex column top100">
             <div className="circle-out"></div>
             <div className="circle-in"></div> 
             <div className="direction top"

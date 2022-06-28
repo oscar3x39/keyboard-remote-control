@@ -1,23 +1,15 @@
 import React from "react"
-import {useRouter} from 'next/router'
 
-import Title from './title'
-import Browser from './browser'
-import Search from './search'
-import Keyboard from './keyboard'
-import QRcode from './qrcode'
+import Title from '../components/title'
+import Keyboard from '../components/keyboard'
+import Navigator from "../components/navigation"
 
 export default function Home() {
-
-  const router = useRouter()
-
   return (
     <>
-      <QRcode url={`${router.pathname}`}></QRcode>
-      <Title></Title>
-      <Search></Search>
-      <Browser></Browser>
+      <Title title={`REMOTE CONTROL`}></Title>
       <Keyboard></Keyboard>
+      <Navigator></Navigator>
     </>
   )
 }

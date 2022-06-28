@@ -4,7 +4,17 @@ import { useQRCode } from 'next-qrcode';
 export default function qrcode({url}) {
 
     const { Canvas } = useQRCode();
+
+    if (!url) {
+      return (
+        <>
+          <h1>Loading...</h1>
+        </>
+      )
+    }
+
     return (
+      <div className='flex top100'>
         <Canvas
             text={url}
             options={{
@@ -13,12 +23,13 @@ export default function qrcode({url}) {
                 level: 'M',
                 margin: 3,
                 scale: 4,
-                width: 200,
+                width: 350,
                 color: {
                     dark: '#000',
                     light: '#fff',
                 },
             }}
         />
+      </div>
     )
 }

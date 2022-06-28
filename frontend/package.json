@@ -11,6 +11,7 @@
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
     "next": "12.1.6",
+    "next-absolute-url": "^1.2.2",
     "next-qrcode": "^2.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",

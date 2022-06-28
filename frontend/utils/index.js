@@ -7,9 +7,13 @@ const opts = {
 
 export async function api(data) {
   opts.body = JSON.stringify(data)
-  const response = await fetch(url, opts);
-  const res = await response.json();
-  console.log(data)
+  await fetch(url, opts);
+  // const res = await response.json();
+  // console.log(data)
   return true;
-  // this.setState({ postId: data.id });
+}
+
+export function has(obj, property) {
+  if (!obj) return false
+  return property in obj
 }

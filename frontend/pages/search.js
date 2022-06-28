@@ -1,11 +1,15 @@
-export default function search() {
+import Title from '../components/title'
+import Browser from '../components/browser'
+import Search from '../components/search'
+import Navigator from "../components/navigation"
 
-    return (
-        <>
-            <div className="search">
-                <input type="search" placeholder="website link type here" />
-                <button type="submit"></button>
-            </div>  
-        </>
-    )
+export default function search() {
+  return (
+    <>
+      <Title title={"BROWSER"}></Title>
+      <Search></Search>
+      <Browser></Browser>
+      <Navigator></Navigator>
+    </>
+  )
 }
